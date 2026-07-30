@@ -9,8 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-steps:
-      - name: Checkout code343 
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -22,4 +22,4 @@ steps:
         run: npm install
 
       - name: Build Docker image
-        run: docker build -t devops-demo .
+        run: docker build -t devops-demo . 
